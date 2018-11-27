@@ -45,6 +45,7 @@ class ViewController: UIViewController {
             radio.append(List(selected: false, title: "hehe \(i)"))
             check.append(List(selected: false, title: "xixi \(i)"))
         }
+        // Radio must have true value, hehehe
         radio.append(List(selected: true, title: "hehe yey"))
         
         list.append(radio)
@@ -54,12 +55,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Radio Button must only 1 that true, so must to change every item state to be false first. hehe
         if indexPath.section == 0 {
             for i in 0...self.list[0].count-1 {
                 self.list[0][i].selected = false
             }
         }
         
+        // Change selected state
         self.list[indexPath.section][indexPath.row].selected = !self.list[indexPath.section][indexPath.row].selected
         tableView.reloadData()
     }
