@@ -17,6 +17,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // You have to think like 1 [List] consist 1 group of radio buttons / checkboxes
     var list: [[List]] = [[],[]]
     
     override func viewDidLoad() {
