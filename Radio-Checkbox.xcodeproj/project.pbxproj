@@ -12,6 +12,8 @@
 		90E8C55E21AD97E300161669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E8C55C21AD97E300161669 /* Main.storyboard */; };
 		90E8C56021AD97E500161669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E8C55F21AD97E500161669 /* Assets.xcassets */; };
 		90E8C56321AD97E500161669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E8C56121AD97E500161669 /* LaunchScreen.storyboard */; };
+		90E8C56C21AD990B00161669 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8C56A21AD990B00161669 /* ListCell.swift */; };
+		90E8C56D21AD990B00161669 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E8C56B21AD990B00161669 /* ListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		90E8C55F21AD97E500161669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90E8C56221AD97E500161669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90E8C56421AD97E500161669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E8C56A21AD990B00161669 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		90E8C56B21AD990B00161669 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				90E8C55F21AD97E500161669 /* Assets.xcassets */,
 				90E8C56121AD97E500161669 /* LaunchScreen.storyboard */,
 				90E8C56421AD97E500161669 /* Info.plist */,
+				90E8C56A21AD990B00161669 /* ListCell.swift */,
+				90E8C56B21AD990B00161669 /* ListCell.xib */,
 			);
 			path = "Radio-Checkbox";
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90E8C56321AD97E500161669 /* LaunchScreen.storyboard in Resources */,
+				90E8C56D21AD990B00161669 /* ListCell.xib in Resources */,
 				90E8C56021AD97E500161669 /* Assets.xcassets in Resources */,
 				90E8C55E21AD97E300161669 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E8C56C21AD990B00161669 /* ListCell.swift in Sources */,
 				90E8C55B21AD97E300161669 /* ViewController.swift in Sources */,
 				90E8C55921AD97E300161669 /* AppDelegate.swift in Sources */,
 			);
