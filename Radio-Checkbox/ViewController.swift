@@ -56,6 +56,8 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Radio Button must only 1 that true, so must to change every item state to be false first. hehe
+        // I don't know if this is the best method but I believe this will worked at any cases. hehe :3
+        // If you have spare time, you might want to use .filter instead of this for O(log n) performance
         if indexPath.section == 0 {
             for i in 0...self.list[0].count-1 {
                 self.list[0][i].selected = false
@@ -64,7 +66,10 @@ extension ViewController: UITableViewDelegate {
         
         // Change selected state
         self.list[indexPath.section][indexPath.row].selected = !self.list[indexPath.section][indexPath.row].selected
+        
         tableView.reloadData()
+//        Or even you can only reload partial section with below (in case you want to add animation) hehe
+//        tableView.reloadSections(IndexSet(arrayLiteral: indexPath.section), with: .left)
     }
 }
 
@@ -89,3 +94,6 @@ extension ViewController: UITableViewDataSource {
         }
     }    
 }
+
+// Thats all!
+// Love from Patrick ❤️
